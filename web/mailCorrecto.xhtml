@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Éxito</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <style>
+            body {
+                background-color: #fff; /* Fondo blanco */
+                color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .success-container {
+                background-color: #fff;
+                color: #000;
+                border: 1px solid #000;
+                border-radius: 10px; /* Bordes redondeados */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+                padding: 20px;
+                width: 600px; /* Ancho fijo para la tarjeta */
+            }
+            .return-link {
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="success-container">
+            <h:form id="emailForm">
+                <p:messages id="messages" severity="error" showDetail="true" /><!-- revisar -->
+                <div style="text-align: center">
+                    <hr/>
+                    <div align="center" style="margin-top: 50px">
+                        <p:panel>
+                            <p:panelGrid columns="2">
+                                <h1>
+                                    Email enviado exitosamente!!! </h1>
+                                <h:commandLink styleClass="btn btn-warning" id="atras" value="Atras" action="email">
+                                    <i class="fas fa-arrow-left" />
+                                </h:commandLink>
+                            </p:panelGrid>
+                        </p:panel>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </h:body>
+</html>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    min-width: 400px;
+    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+        
+.table {
+    background-color: #ffffff;
+    color: #000000;
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+.table th, .table td {
+    padding: 2px; 
+    border: 1px solid #000; 
+    font-size: 16px;
+}
+
+.table th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.table tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+.toolbar{
+    margin-top: 50px;
+}
+.mailClass{
+    margin-left: 500px;
+}
